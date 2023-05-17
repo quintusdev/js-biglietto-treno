@@ -27,6 +27,7 @@ let prezzo_scont2;
 //CALCOLO EVENTUALE SCONTO E VISUALIZZAZIONE PREZZO FINALE
 
 if (eta_utente < 18) {
+    
     let sconto_min = (prezzo_intero * 20 / 100);
         prezzo_scont1 = (prezzo_intero - sconto_min);
 
@@ -37,6 +38,7 @@ if (eta_utente < 18) {
     alert("Il prezzo del tuo biglietto e' di: "+ prezzo_scontato1 + " €.");
 
 } else if (eta_utente >= 65) {
+
     let over = (prezzo_intero * 40 / 100);
     prezzo_scont2 = (prezzo_intero - over);
 
