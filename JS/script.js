@@ -33,15 +33,21 @@ if (eta_utente < 18) {
         //CONVERSIONE IN DECIMALE A 2 CIFRE
     let prezzo_scontato1 = prezzo_scont1.toFixed(2);
 
-        //VISUALIZZA RISULTATO
+        //VISUALIZZA PREZZO SCONTATO MINORENNI FINALE
     alert("Il prezzo del tuo biglietto e' di: "+ prezzo_scontato1 + " €.");
 
 } else if (eta_utente >= 65) {
     let over = (prezzo_intero * 40 / 100);
     prezzo_scont2 = (prezzo_intero - over);
+
+        //CONVERSIONE IN DECIMALE A 2 CIFRE
     let prezzo_scontato2 = prezzo_scont2.toFixed(2);
+        
+        //VISUALIZZA PREZZO TOTALE OVER 65 FINALE
     alert("Il prezzo del tuo biglietto e' di: " + prezzo_scontato2 +" €.");
 } else {
-    alert("Il prezzo del tuo biglietto e' di: " + (prezzo_intero) +" €.");
+
+        //VISUALIZZA PREZZO INTERO FINALE
+    alert("Il prezzo del tuo biglietto e' di: " + prezzo_intero +" €.");
 }
 
