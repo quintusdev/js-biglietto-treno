@@ -28,7 +28,7 @@ let prezzo_scont2;
 
 if (eta_utente < 18) {
     
-    let sconto_min = (prezzo_intero * 20 / 100);
+        sconto_min = (prezzo_intero * 20 / 100);
         prezzo_scont1 = (prezzo_intero - sconto_min);
 
         //CONVERSIONE IN DECIMALE A 2 CIFRE
@@ -39,7 +39,7 @@ if (eta_utente < 18) {
 
 } else if (eta_utente >= 65) {
 
-    let over = (prezzo_intero * 40 / 100);
+    over = (prezzo_intero * 40 / 100);
     prezzo_scont2 = (prezzo_intero - over);
 
         //CONVERSIONE IN DECIMALE A 2 CIFRE
